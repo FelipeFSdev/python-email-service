@@ -11,3 +11,5 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
+
+app.include_router(send_email_route)
